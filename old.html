@@ -1,15 +1,403 @@
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/bootstrap/bootstrap-4.0.0-alpha.4.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme.css" rel="stylesheet" type="text/css">
+</head>
 
-  <body>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-  </body>
-  
+<body class="text-xs-center">
+  <div class="section  text-xs-center bg-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="pi-draggable pi-item p-a-3 display-3">Welcome to Pingendo editor!</h1>
+          <h1 class="pi-draggable pi-item display-4 p-y-3">Try here, on this page</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row p-a-3">
+        <div class="col-md-12">
+          <h1 class="text-xs-center">Basic editing</h1>
+        </div>
+      </div>
+      <div class="row text-xs-center">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Edit text</h4>
+              <p class="">Double click to edit.
+                <br>
+                <br>Formatting options appear in the top bar.
+                <br>
+                <br>
+                <br>
+                <br>&nbsp; &nbsp;</p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="double_click.gif">
+          </div>
+        </div>
+        <div class="col-md-3  ">
+          <div class="card">
+            <div class="card-block text-xs-center card-info">
+              <h4 class="">Copy - Undo</h4>
+              <p class="">Work on all actions
+                <br>
+                <br>Copy / Paste
+                <br>
+                <i class="fa fa-windows fa-fw"></i>ctrl C/V &nbsp;&nbsp;
+                <i class=" fa fa-apple fa-fw"></i>&nbsp;⌘&nbsp;C/V&nbsp;
+                <br>
+                <br>Undo / Redo
+                <br>
+                <i class=" fa fa-apple fa-fw"></i>&nbsp;⌘ Z &nbsp;/ &nbsp;⌘ ⇧ Z &nbsp;
+                <br>
+                <i class=" fa fa-windows fa-fw"></i>&nbsp;ctrl Z / ctrl ⇧ Z
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="undo_text.png">
+          </div>
+        </div>
+        <div class="col-md-6  ">
+          <div class="card">
+            <div class="card-block card-info text-xs-center">
+              <h4 class="">Images</h4>
+              <p class="">Double click to pick the image among the uploaded ones.
+                <br>
+                <br>To link external images, click on image and paste the link in the URL field.
+                <br>
+                <br>
+                <br>
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="Recording%20#4.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row p-a-3">
+        <div class="col-md-12">
+          <h1 class="text-xs-center">Advanced editing</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Insert section &amp; components</h4>
+              <p class="">&nbsp;Click on a section or component to insert it after the active element.
+                <br>
+                <br>Drag elements and drop according to the blue line that shows the insertion point.
+                <br>
+              </p>
+              <div class="row">
+                <div class="col-lg-6"><a href="#" class="btn btn-primary">Button</a></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="double_click.gif">
+          </div>
+        </div>
+        <div class="col-md-6   ">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Set properties</h4>
+              <p class="">Select an element in the page.
+                <br>
+                <br>Modify its available settings in the right panel.&nbsp;
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="set_properties.gif">
+          </div>
+        </div>
+
+      </div>
+      <div class="row p-y-3 m-y-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Clone elements</h4>
+              <p class="">&nbsp;
+                <br>
+                <i class=" fa fa-apple fa-fw"></i>&nbsp;⇧ ⌘ C
+                <br>
+                <br>
+                <i class=" fa fa-windows fa-fw"></i>&nbsp;⇧ ctrl C
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="clone.gif">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Clone elements</h4>
+              <p class="">&nbsp;
+                <br>
+                <i class=" fa fa-apple fa-fw"></i>&nbsp;⇧ ⌘ C
+                <br>
+                <br>
+                <i class=" fa fa-windows fa-fw"></i>&nbsp;⇧ ctrl C
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="clone.gif">
+          </div>
+        </div>
+        <div class="col-md-4   ">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Copy elements</h4>
+              <p class="">Copy and cut work on all elements and between pages.
+                <br>
+                <br>Paste, inserts after the active element.</p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="resize7.gif">
+          </div>
+        </div>
+
+      </div>
+      <div class="row p-y-3 m-y-3">
+
+        <div class="col-md-4   ">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Work on childs</h4>
+              <p class="">In the tree you can select,&nbsp;
+                <br>add or remove childs as carousel's slides or navbar elements.
+                <br>
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="resize7.gif">
+          </div>
+        </div>
+        <div class="col-md-4   ">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Work on childs</h4>
+              <p class="">Select or sort elements
+                <br>
+                <br>The tree is where to go to add/delete childs as pictures in carousels
+                <br>
+                <br>Press Esc to select the element's parent
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="esc_to_select_parent.mov.gif">
+          </div>
+        </div>
+        <div class="col-md-4   ">
+          <div class="card">
+            <div class="card-block card-info">
+              <h4 class="">Sort child</h4>
+              <p class="">The tree has many features:
+                <br>
+                <br>Show the selected element name
+                <br>
+                <br>Select or sort elements
+                <br>
+                <br>Add/delete nested childs (as pictures in carousels or elements in navbars)
+                <br>
+              </p>
+            </div>
+            <img class="center-block img-fluid m-x-auto d-block p-y-2" src="esc_to_select_parent.mov.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section bg-faded">
+    <div class="container">
+      <div class="row p-a-3">
+        <div class="col-md-12">
+          <h1 class="text-xs-center">Work on source</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="HTML_editor.mov.gif" alt="Card image">
+            <div class="card-block">
+              <h4 class="card-title">Select an element to get at its HTML source</h4>
+              <h6 class="card-subtitle text-muted">Dragging elements creates the related snippets in the HTML source. Every action on the visual editor updates the source.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="resize.gif" alt="Card image">
+            <div class="card-block">
+              <h4 class="card-title">Add custom rules in the Saas editor</h4>
+              <h6 class="card-subtitle text-muted">The Saas editor simplifies adding custom rules. Saas &nbsp;is compiled before being saved.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bg-inverse p-y-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-xs-center">Try on a basic page...</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section  section-opaque-dark text-xs-center">
+    <div class="background-image" style="background-image: url(&quot;https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/apple/cover-1.jpg&quot;);"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 pi-draggable pi-item text-inverse">DARK COVER</h1>
+          <a href="#" class="btn btn-lg btn-secondary-outline m-y-lg">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/fashion/photo-1.jpg" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-primary">HEADING</h1>
+          <h3>A subtitle</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-primary">HEADING</h1>
+          <h3>A subtitle</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/fashion/photo-1.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/fashion/photo-1.jpg" class="img-fluid m-y">
+          <p class="m-y-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/fashion/photo-2.jpg" class="img-fluid m-y">
+          <p class="m-y-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/fashion/photo-3.jpg" class="img-fluid m-y">
+          <p class="m-y-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-xs-center">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/user_placeholder.png" class="center-block img-circle img-fluid m-y m-y-1">
+          <h3>John Doe</h3>
+          <p>Developer</p>
+        </div>
+        <div class="col-md-4 text-xs-center">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/user_placeholder.png" class="center-block img-circle img-fluid m-y m-y-1">
+          <h3>John Doe</h3>
+          <p>Developer</p>
+        </div>
+        <div class="col-md-4 text-xs-center ">
+          <img src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/user_placeholder.png" class="center-block img-circle img-fluid m-y m-y-1">
+          <h3>John Doe</h3>
+          <p>Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-faded p-y-0 section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 offset-lg-1">
+          <h1 class="m-y-2 m-y-lg pi-draggable pi-item text-center" draggable="true">COMPANY</h1>
+          <p class="text-center">
+            <strong>Company name, Inc.</strong>
+            <br>795 Folsom Ave, Suite 600
+            <br>San Francisco, CA 94107
+            <br>
+            <abbr title="Phone">P:</abbr>(123) 456-7890</p>
+          <div class="m-y-2 m-y-lg row text-center">
+            <div class="col-xs-4 text-left">
+              <a><i class="fa fa-3x fa-facebook text-primary"></i></a>
+            </div>
+            <div class="col-xs-4 text-left">
+              <a><i class="fa fa-3x fa-twitter text-primary"></i></a>
+            </div>
+            <div class="col-xs-4 text-left">
+              <a><i class="fa fa-3x fa-instagram text-primary"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-a-0   ">
+          <img class="img-fluid m-a-0 p-a-0" src="https://maps.googleapis.com/maps/api/staticmap?center=folsom+Ave+san+francisco&amp;zoom=16&amp;size=640x480&amp;sensor=false&amp;scale=2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1">&nbsp;</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bg-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-xs-center">
+            <br>Login now to create your first project.&nbsp;It's free
+            <br>
+            <br>
+            <br>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+
+
+
+</body>
+
 </html>
